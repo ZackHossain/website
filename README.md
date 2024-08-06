@@ -52,6 +52,7 @@ A button to return to the home page.
 
 - Tags
   - Details on what skills are used in this project
+  - If there are more than *x* tags, it should show *x - 1* tags, with last tag that can be clicked to show all tags.
 - Title
 - Subheader
   - Describing what type of project this was (Hacking Lab, electronics, programming, etc.)
