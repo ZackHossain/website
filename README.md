@@ -69,6 +69,6 @@ A description of the project. This section will be a write up of what the projec
 | Primary #1 | ![#96CEB4](https://via.placeholder.com/10/96CEB4?text=+) #96CEB4 |
 | Primary #2 | ![#FFAD60](https://via.placeholder.com/10/FFAD60?text=+) #FFAD60 |
 | Secondary #1 | ![#F0EAD6](https://via.placeholder.com/10/F0EAD6?text=+) #F0EAD6 |
-| Secondary #1 | ![#989FCE](https://via.placeholder.com/10/989FCE?text=+) #989FCE |
+| Secondary #2 | ![#989FCE](https://via.placeholder.com/10/989FCE?text=+) #989FCE |
 | Text | ![#3D3B3C](https://via.placeholder.com/10/3D3B3C?text=+) #3D3B3C |
 
