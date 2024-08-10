@@ -1,8 +1,164 @@
 /* style.css */
+
+/* GLOBAL */
+
+@font-face {
+    font-family: 'Retro';
+    src: url('../assets/Cowboy_Hippie_Pro.otf');
+}
+
 :root {
-    --primary: #96CEB4;
+    --primary: #96CED4;
     --primary-second: #FFAD60;
     --secondary: #F0EAD6;
     --secondary-second: #989FCE;
     --text-primary: #3D3B3C;
+    --transition-time: 0.2s;
+}
+
+/* NAV */
+
+nav {
+    background-color: var(--primary);
+    font-family: 'Retro';
+}
+
+.navbar-brand {
+    color: var(--secondary);
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover {
+    color: var(--secondary);
+}
+
+.navbar-brand:focus {
+    color: var(--secondary);
+}
+
+.nav-link {
+    color: var(--secondary);
+    /* font-weight: bold; */
+    font-size: 24px;
+    letter-spacing: 0.5px;
+    text-align: center;
+    transition: transform var(--transition-time) ease-in-out;
+}
+
+.nav-link:hover {
+    color: var(--secondary-second);
+    transform: scale(1.1);
+    /* font-size: 26px; */
+    /* transition: ease-in-out 0.3s; */
+}
+
+.nav-btn {
+    background-color: var(--text-primary);
+    color: var(--secondary);
+
+    display: inline-block;
+    padding: 0px 1em;
+
+    border: 1px solid var(--secondary);
+    border-radius: 2px;
+
+    text-decoration: none;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+
+    transition:
+        background-color var(--transition-time) ease,
+        color var(--transition-time) ease,
+        transform var(--transition-time) ease,
+        border-width var(--transition-time) ease,
+        box-shadow var(--transition-time) ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--secondary);
+    color: var(--text-primary);
+    border-color: var(--text-primary);
+    border-width: 2px;
+    box-shadow: 2px 2px 5px var(--text-primary);
+    transform: scale(1.1);
+}
+
+
+
+
+
+.navbar-toggler-icon {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    border-radius: 3px;
+}
+
+.navbar-toggler {
+    display: block;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.navbar-toggler:before {
+    content: '\2630'; /* Unicode character for hamburger menu */
+    font-size: 24px;
+    /* color: var(--secondary); */
+}
+
+/* Hide the menu by default on small screens */
+.navbar-collapse {
+    display: none;
+}
+
+/* Show the menu when the checkbox is checked */
+#navbar-toggle:checked ~ .navbar-collapse {
+    display: block;
+}
+
+/* Ensure the menu is properly styled and positioned */
+.navbar-collapse {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: var(--primary);
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+}
+
+@media (max-width: 992px) {
+    .nav-btn {
+        border: none;
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        flex-direction: row;
+        position: static;
+        width: auto;
+        box-shadow: none;
+    }
+
+    .nav-item {
+        padding: 0 15px;
+    }
 }
