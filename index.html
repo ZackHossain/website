@@ -26,18 +26,22 @@
 				<label for="navbar-toggle" class="navbar-toggler"></label>
 				<div class="navbar-collapse">
 					<ul class="navbar-nav ms-auto">
-						<li class="nav-item"><a href="#current-projects" class="nav-link">PROJECTS</a></li>
-						<li class="nav-item"><a href="#experience" class="nav-link">EXERIENCE</a></li>
-						<li class="nav-item"><a href="#certifications" class="nav-link">CERTS & SKILLS</a></li>
-						<li class="nav-item"><a href="#education" class="nav-link">EDUCATION</a></li>
-						<div class="align-content-center">
+						<li class="nav-item"><a href="#current-projects" class="nav-link">projects</a></li>
+						<li class="nav-item"><a href="#experience" class="nav-link">experience</a></li>
+						<li class="nav-item"><a href="#certifications" class="nav-link">certs & skills</a></li>
+						<li class="nav-item"><a href="#education" class="nav-link">education</a></li>
+						<li class="nav-item align-content-center">
 							<a
-								class="nav-btn mh-50"
+								class="nav-btn w-100"
 								href="./files/ZackHossainCV.pdf"
 								download="ZackHossain"
-							> <span>MY RESUME</span></a>
+							>
+                             <!-- <span> -->
+                                my resume
+                            <!-- </span> -->
+                        </a>
 
-						</div>
+						</li>
 					</ul>
 				</div>
 			</nav>
@@ -46,20 +50,30 @@
       <main>
         <!-- Intro Section -->
         <section class="section-container" id="intro">
-          <div class="content">
-            <h1 class="header">Obsessed with code. Fueled by passion.</h1>
-            <p>
-              I am a student of Computer Science at UNSW, currently working on
-              my CompTIA A+ certification, and extremely passionate about all
-              things IT and CompSci &#128526;
-            </p>
-            <p>
-                I've been programming since High School, when I taught myself 
-                JavaScript so I could start automating my homework submissions. 
-                I fell in love, and have been learning as much as I can since.
-                My latest adventure is the CompTIA A+ certification, which I have 
-                started studying to understand the fundamentals of IT
-            </p>
+          <div class="container intro-content">
+            <div class="row">
+                <div class="responsive-intro-photo">
+                    <img src="./assets/Headshot.JPG" alt="Zack" class="intro-photo rounded-circle mx-auto d-block">
+                </div>
+                <div class="col-lg-6 order-lg-first order-md-last">
+                    <h1 class="intro-header">OBSESSED WITH CODE. <br>FUELED BY PASSION.</h1>
+                    <p class="intro-p">
+                    I am a student of Computer Science at UNSW, currently working on
+                    my CompTIA A+ certification, and extremely passionate about all
+                    things IT and CompSci &#128526;
+                    </p>
+                    <p class="intro-p">
+                    I've been programming since High School, when I taught myself 
+                    JavaScript so I could start automating my homework submissions. 
+                    I fell in love, and have been learning as much as I can since.
+                    My latest adventure is the CompTIA A+ certification, which I have 
+                    started studying to understand the fundamentals of IT
+                    </p>
+                </div>
+                <div class="col-lg-6 order-lg-last order-md-first d-flex align-items-center">
+                    <img src="./assets/Headshot.JPG" alt="Zack" class="intro-photo rounded-circle main-intro-photo">
+                </div>
+            </div>
           </div>
         </section>
         <!-- Current Projects Section -->
