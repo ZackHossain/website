@@ -15,11 +15,13 @@
 :root {
     /* Theme */
     --primary: #96CED4;
+    --primary-dark: #B0BCC2;
     --primary-second: #FFAD60;
     --secondary: #F0EAD6;
     --secondary-dark: #ede0b7;
     --secondary-second: #686d8d;
     --text-primary: #3D3B3C;
+    --text-card: #F0EAD6;
     --shadow-opacity50: #00000050;
 
     /* Tags */
@@ -45,6 +47,97 @@ h1 {
     font-weight: bold;
     font-size: 48px;
     color: inherit;
+}
+
+/*? PROJECT CARDS */
+
+
+/* 
+CHANGE COLOR SCHEME FOR CARDS?? 
+*/
+.card {
+    background-image: var(--noise);
+    background-color: var(--primary-dark);
+    box-shadow: var(--shadow-opacity50) 5px 5px 0px;
+    transition: transform var(--transition-time) ease, box-shadow var(--transition-time) ease;
+
+    border-radius: 0px;
+}
+
+.card:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-opacity50) 20px 10px 0px;
+
+    z-index: 1;
+}
+
+.card-img {
+    padding: 1rem;
+}
+
+.card-title {
+    color: var(--secondary-dark);
+
+    font-family: 'Retro';
+    font-size: 36px;
+    /* text-shadow: black 2px 2px; */
+    letter-spacing: 1px;
+}
+
+.card-tag {
+    color: var(--text-primary);
+    font-family: 'ParaRetro';
+    font-size: 16px;
+    font-weight: bold;
+
+    display: flex;
+    width: inherit;
+    align-items: center;
+    justify-content: center;
+
+    box-shadow: var(--shadow-opacity50) 1px 1px;
+}
+
+.card-tag:hover {
+    transform: scale(1.5);
+}
+
+.card-body {
+    color: var(--text-card);
+
+    font-family: 'ParaRetro';
+    font-size: 16px;
+}
+
+
+
+/*? Responsiveness */
+
+@media (max-width: 992px) {
+    .card {
+        margin-bottom: 2rem;
+    }
+
+    .card-body {
+        display: none;
+    }
+}
+
+/*? tag colors */
+.js {
+    background-color: var(--tag-js);
+}
+
+.css {
+    background-color: var(--tag-css);
+}
+
+.html {
+    background-color: var(--tag-html);
+}
+
+.more {
+    background-color: var(--tag-more);
 }
 
 /*! NAV */
@@ -263,6 +356,7 @@ section#intro {
     padding: 1rem 4rem 4rem 4rem;
     background-image: var(--noise);
     background-color: var(--secondary);
+    /* background-color: #343434; */
     /* width: 100%; */
 }
 
@@ -272,66 +366,7 @@ section#intro {
     letter-spacing: 1px;
 }
 
-
-/*? PROJECT CARDS */
-
-
-/* 
-CHANGE COLOR SCHEME FOR CARDS?? 
-*/
-.card {
-    background-image: var(--noise);
-    background-color: var(--secondary-second);
-    box-shadow: var(--shadow-opacity50) 10px 10px 2px;
-    transition: transform var(--transition-time) ease;
-}
-
-.card:hover {
-    transform: scale(1.1);
-    z-index: 1;
-}
-
-.card-img {
-    padding: 1rem;
-}
-
-.card-title {
-    color: var(--secondary);
-
-    font-family: 'Retro';
-    font-size: 24px;
-    text-shadow: black 2px 2px;
-    letter-spacing: 1px;
-}
-
-.card-tag {
-    color: var(--text-primary);
-    font-family: 'ParaRetro';
-    font-size: 16px;
-    font-weight: bold;
-
-    display: flex;
-    width: inherit;
-    align-items: center;
-    justify-content: center;
-
-    box-shadow: var(--shadow-opacity50) 1px 1px;
-}
-
-.card-tag:hover {
-    transform: scale(1.5);
-}
-
-.card-body {
-    color: var(--secondary);
-
-    font-family: 'ParaRetro';
-    font-size: 16px;
-}
-
-
-
-/*? Responsiveness */
+/* Responsiveness */
 
 @media (max-width: 992px) {
     #current-projects {
@@ -342,29 +377,4 @@ CHANGE COLOR SCHEME FOR CARDS??
         text-align: center;
         width: 100%;
     }
-
-    .card {
-        margin-bottom: 2rem;
-    }
-
-    .card-body {
-        display: none;
-    }
-}
-
-/*? tag colors */
-.js {
-    background-color: var(--tag-js);
-}
-
-.css {
-    background-color: var(--tag-css);
-}
-
-.html {
-    background-color: var(--tag-html);
-}
-
-.more {
-    background-color: var(--tag-more);
 }
