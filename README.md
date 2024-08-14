@@ -8,6 +8,15 @@ A portfolio website for Zack Hossain. Zack is a student of Computer Science at U
 
 ## Structure
 
+## Global
+
+`Social Media`
+
+A selection of links to my social media accounts. This will be a set of floating icons along the right side of the screen.
+
+- Github
+- LinkedIn
+
 #### Home
 
 `Nav Section`
